@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_incomebydate"
+    android:layout_marginTop="70dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_module.MonthlyIncomebyDate">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:id="@+id/ced_date_froms"
+            android:cursorVisible="false"
+            android:background="@drawable/date_from"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:hint="Date From"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:id="@+id/ced_date_tos"
+            android:cursorVisible="false"
+            android:background="@drawable/date_to"
+            android:layout_weight="1"
+            android:hint="Date to"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:id="@+id/iv_searchs"
+            android:src="@drawable/ic_search_black_24dp"
+            android:background="@drawable/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:visibility="gone"
+            android:text="No Record Found"
+            android:gravity="center"
+            android:id="@+id/ctv_err"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_monthly_completeds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

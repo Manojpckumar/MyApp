@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_userprofile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".User_Module.Profile_Fragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_arc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:id="@+id/ctv_first_letter"
+            android:layout_gravity="center"
+            android:text="M"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:id="@+id/ctv_operator_name"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Manoj Kumar P C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="Operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+           android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_today"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/profile_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Todays Task"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_showAll"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/profile_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Show Complete Task"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_profile"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/profile_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Update Profile"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_changepa"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:orientation="horizontal"
+                android:background="@drawable/profile_card_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Change Password"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25sp"/>
+
+            <com.example.theerthamovers.CustomViews.CustomButton
+                android:id="@+id/ced_signout"
+                android:text="Sign Out"
+                android:drawablePadding="-35dp"
+                android:paddingLeft="35dp"
+                android:drawableTint="@color/white"
+                android:drawableLeft="@drawable/ic_signout1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:background="@drawable/button_back"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_user_hfrag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User_Module.User_Home_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/linear_arc"
+        android:background="@drawable/back_arc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+   <LinearLayout
+       android:layout_marginTop="50dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="300dp">
+
+        <LinearLayout
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:text="Hi "
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:id="@+id/ctv_opname"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="20dp"/>
+
+       <LinearLayout
+           android:gravity="center"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <com.example.theerthamovers.CustomViews.CustomTextView
+               android:textAlignment="center"
+               android:text="Welcome to \n\n Theertha Earth Movers \n\n Operator Dashboard"
+               android:textSize="20sp"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:text="Todays Work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+<!--    <FrameLayout-->
+<!--      android:layout_marginTop="40dp"-->
+<!--      android:padding="10dp"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content">-->
+
+
+
+<!--        <LinearLayout-->
+<!--            android:visibility="gone"-->
+<!--            android:id="@+id/ll_notask"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <LinearLayout-->
+<!--                xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <LinearLayout-->
+<!--                    android:padding="10dp"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@drawable/no_task_back"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:gravity="center"-->
+<!--                        android:src="@drawable/ic_sad_black_24dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="80dp"/>-->
+
+<!--                    <com.example.theerthamovers.CustomViews.CustomTextView-->
+<!--                        android:gravity="center"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="20sp"-->
+<!--                        android:text="You have no Task Today"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+
+
+<!--                </LinearLayout>-->
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+<!--  </FrameLayout>-->
+
+<FrameLayout
+    android:layout_below="@id/linear_arc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="5dp"
+        android:id="@+id/rcv_todayTask"
+        android:layout_below="@id/linear_arc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:id="@+id/ctv_nulls"
+        android:visibility="gone"
+        android:paddingTop="100dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:text="No Work Assigned Or Refresh your page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
+
+</RelativeLayout>

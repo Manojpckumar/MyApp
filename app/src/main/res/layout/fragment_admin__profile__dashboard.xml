@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/screen_back"
+    tools:context=".Admin_module.Admin_Profile_Dashboard">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:paddingTop="10dp"
+            android:id="@+id/ctv_adminprohead"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_completeTask"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/squre_back"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:src="@drawable/ic_showtask"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingTop="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Complete \n Task's"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pendingTask"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/squre_back"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:src="@drawable/ic_report"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingTop="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Get All Pending \n Works"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_getallexbydate"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/squre_back"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:src="@drawable/ic_graph"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingTop="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="Get All Expenses \n By Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_getallworkbydate"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/squre_back"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <ImageView
+                android:src="@drawable/ic_showtask"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Get Work By \n Date Range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+
+
+       <LinearLayout
+           android:layout_marginStart="20dp"
+           android:layout_marginEnd="20dp"
+           android:id="@+id/btn_SignOut"
+           android:gravity="center"
+           android:background="@drawable/squre_back"
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+
+
+           <ImageView
+               android:src="@drawable/ic_signout1"
+               android:layout_width="30dp"
+               android:layout_height="30dp"/>
+
+           <com.example.theerthamovers.CustomViews.CustomTextView
+               android:paddingLeft="10dp"
+               android:text="Sign Out"
+               android:textColor="@color/white"
+               android:textSize="17sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+
+
+       </LinearLayout>
+
+
+
+</LinearLayout>

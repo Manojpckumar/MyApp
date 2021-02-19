@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_proupdate"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Module.UserProfileUpdate"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:text="Update Profile"
+        android:textColor="@color/violet"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="30dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Operator Id" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="User Name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_username"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Mobile Number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_mob"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Email Id" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_back">
+
+                    <com.example.theerthamovers.CustomViews.CustomEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/ced_em"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:defaultFocusHighlightEnabled="false"
+                        android:paddingLeft="10dp" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_changepass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/tv_changepass"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:gravity="right"
+                    android:text="Change Password ?"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:passwordToggleEnabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.example.theerthamovers.CustomViews.CustomEditText
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:id="@+id/ced_pass"
+                        android:layout_height="40dp"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:defaultFocusHighlightEnabled="false"
+                        android:paddingLeft="10dp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_conpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Confirm Password" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+               <com.google.android.material.textfield.TextInputLayout
+                   android:layout_width="match_parent"
+                   app:passwordToggleEnabled="true"
+                   android:layout_height="wrap_content">
+
+                   <com.example.theerthamovers.CustomViews.CustomEditText
+                       android:layout_width="match_parent"
+                       android:inputType="textPassword"
+                       android:id="@+id/ced_conpass"
+                       android:layout_height="40dp"
+                       android:background="@null"
+                       android:cursorVisible="false"
+                       android:defaultFocusHighlightEnabled="false"
+                       android:paddingLeft="10dp" />
+
+
+               </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomButton
+            android:id="@+id/btn_upprofile"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Update Profile"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

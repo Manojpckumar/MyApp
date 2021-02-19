@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_verify"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/vio"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInterface.VerifyOtpScreen">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:gravity="center"
+        android:text="Verification Code"
+        android:textSize="22sp"
+        android:textColor="@color/whi"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:padding="15dp"
+        android:gravity="center"
+        android:text="Please type the verification code send to your registered mobile number"
+        android:textSize="18sp"
+        android:textColor="@color/whi"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:id="@+id/ced_1"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/whi"
+            android:background="@drawable/squre_back"
+            android:layout_width="50dp"
+            android:layout_height="70dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColor="@color/whi"
+            android:id="@+id/ced_2"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/squre_back"
+            android:layout_width="50dp"
+            android:layout_height="70dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:inputType="number"
+
+            android:id="@+id/ced_3"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/whi"
+            android:background="@drawable/squre_back"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:inputType="number"
+
+            android:id="@+id/ced_4"
+            android:textSize="25sp"
+
+            android:gravity="center"
+            android:textColor="@color/whi"
+            android:background="@drawable/squre_back"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:inputType="number"
+
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/whi"
+            android:id="@+id/ced_5"
+            android:background="@drawable/squre_back"
+            android:layout_marginLeft="5dp"
+            android:layout_width="50dp"
+            android:layout_height="70dp"/>
+
+        <com.example.theerthamovers.CustomViews.CustomEditText
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="@color/whi"
+            android:inputType="number"
+
+            android:id="@+id/ced_6"
+            android:background="@drawable/squre_back"
+            android:layout_width="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="70dp"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:gravity="center"
+            android:text="Didn't Get the OTP"
+            android:textSize="22sp"
+            android:textColor="@color/whi"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:paddingStart="10dp"
+            android:gravity="center"
+            android:text="Resend OTP ?"
+            android:textSize="18sp"
+            android:textColor="@color/whi"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.example.theerthamovers.CustomViews.CustomButton
+            android:background="@drawable/btn_back_white"
+            android:id="@+id/cbn_verify"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Verify"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

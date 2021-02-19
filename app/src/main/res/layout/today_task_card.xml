@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:elevation="5dp"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        android:id="@+id/ll_taskdet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cv_todayTask"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <com.example.theerthamovers.CustomViews.CustomTextView
+                       android:id="@+id/ctv_phaseid"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:gravity="center"
+                       android:textColor="@color/black"
+                       android:textSize="18sp"
+                       android:textStyle="bold" />
+
+                   <com.example.theerthamovers.CustomViews.CustomTextView
+                       android:id="@+id/ctv_vname"
+                       android:gravity="center"
+                       android:textColor="@color/violet"
+                       android:text="Hitachi MX-200 Pro"
+                       android:textStyle="bold"
+                       android:textSize="20sp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"/>
+
+
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:paddingBottom="10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:gravity="center"
+                            android:text="Veh No:"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:gravity="center"
+                            android:text="KL-46-T-5633"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:gravity="center"
+                            android:text="Category"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:gravity="center"
+                            android:text="Hitachi"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:paddingTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_loc"
+                            android:gravity="center"
+                            android:text="Location"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_work_loc"
+                            android:gravity="center"
+                            android:text="Amala Nagar"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_work_date"
+                            android:gravity="center"
+                            android:text="04/05/2020"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"/>
+
+               <LinearLayout
+                   android:paddingLeft="30dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:gravity="center"
+                       android:paddingEnd="20dp"
+                       android:layout_alignParentEnd="true"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:id="@+id/iv_status"
+                           android:layout_width="15dp"
+                           android:layout_height="15dp"/>
+
+                       <com.example.theerthamovers.CustomViews.CustomTextView
+                           android:id="@+id/ctv_status"
+                           android:text="CONFIRMED"
+                           android:paddingLeft="10dp"
+                           android:textSize="16sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:gravity="right"
+                       android:id="@+id/linear_viewdetail"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <com.example.theerthamovers.CustomViews.CustomTextView
+                           android:id="@+id/ctv_taskview"
+                           android:textStyle="bold"
+                           android:text="View Task Detail"
+                           android:textColor="@color/black"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"/>
+
+                       <ImageView
+                           android:id="@+id/iview_download"
+                           android:gravity="center"
+                           android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"/>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

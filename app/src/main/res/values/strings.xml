@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Theerthamovers</string>
+    <string name="BASE_URL">http://xakerala.com/theerthaearthmovers/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="title_activity_admin__home">Admin_Home</string>
+
+    <string-array name="Selections">
+        <item>Choose One</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+        <item>Four</item>
+        <item>Five</item>
+
+    </string-array>
+
+    <string-array name="Response">
+        <item>No values in spinner</item>
+    </string-array>
+
+    <string-array name="Bill">
+        <item>Bill For Client</item>
+        <item>Bill For Admin</item>
+    </string-array>
+
+    <string name="title_activity_user__home__page">User_Home_Page</string>
+
+</resources>

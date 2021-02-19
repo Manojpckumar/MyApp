@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Home Page">
+            <menu>
+
+                <item
+                    android:icon="@drawable/ic_home_black_24dp"
+                    android:id="@+id/home"
+                    android:title="Home" />
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Operator &amp; Vehicle Management">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_directions_car_black_24dp"
+                    android:id="@+id/addvehicle"
+                    android:title="Add Vehicle" />
+
+                <item
+                    android:icon="@drawable/ic_supervisor_account_black_24dp"
+                    android:id="@+id/getalldriver"
+                    android:title="Get All Operator" />
+
+                <item
+                    android:icon="@drawable/ic_directions_car_black_24dp"
+                    android:id="@+id/getaallvehicle"
+                    android:title="Get All Vehicle" />
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Task Management">
+            <menu>
+
+                <item
+                    android:icon="@drawable/ic_work_black_24dp"
+                    android:id="@+id/assigntask"
+                    android:title="Assign Work" />
+
+<!--                <item-->
+<!--                    android:id="@+id/completedmonthlytask"-->
+<!--                    android:title="Completed Monthly Task" />-->
+
+<!--                <item-->
+<!--                    android:id="@+id/incomebydate"-->
+<!--                    android:title="Income By Date Range" />-->
+
+
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Profile Management">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_account_box_black_24dp"
+                    android:id="@+id/profile"
+                    android:title="Profile Dashboard" />
+
+                <item
+                    android:icon="@drawable/ic_power_settings_new_black_24dp"
+                    android:id="@+id/signout"
+                    android:title="Log Out" />
+            </menu>
+        </item>
+    </group>
+</menu>

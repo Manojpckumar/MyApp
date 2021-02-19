@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_userlogin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_back"
+    tools:context=".User_Module.LogIn_Page">
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:layout_alignParentTop="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="User Login"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_back_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="100dp"
+            android:text="LOGIN"
+            android:textSize="25sp" />
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's start the work"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="50dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_email"
+                app:boxStrokeColor="@color/violet"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeWidth="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:drawableStart="@drawable/ic_phone_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/ted_phone"
+                    android:fontFamily="GeometriaLight"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/violet"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/violet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:hint="Password"
+                android:id="@+id/tl_password"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="@color/violet"
+                app:boxCornerRadiusBottomEnd="25dp"
+                app:boxCornerRadiusBottomStart="25dp"
+                app:boxCornerRadiusTopEnd="25dp"
+                app:boxCornerRadiusTopStart="25dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                app:boxStrokeWidth="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_lock_24dp"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/ted_password"
+                    android:fontFamily="GeometriaLight"
+                    android:paddingStart="20dp"
+                    android:textColorHint="@color/violet"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/violet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:id="@+id/ctv_forgot"
+                android:visibility="gone"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:layout_gravity="end"
+                android:text="Forgot Password ?"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.example.theerthamovers.CustomViews.CustomButton
+                android:id="@+id/cbn_LogIn"
+                android:background="@drawable/button_back"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="login"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+
+            <LinearLayout
+                android:paddingTop="50dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:textSize="18sp"
+                    android:text="Don't Have an Account ?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:onClick="GoToSignup"
+                    android:paddingLeft="5dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/violet"
+                    android:text="Sign Up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:gravity="bottom|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:text="Are You an Admin ?"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:onClick="GoToAdminLogIn"
+                android:paddingLeft="10dp"
+                android:text="Login Here"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/violet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

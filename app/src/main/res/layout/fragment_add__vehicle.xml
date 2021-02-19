@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_addvehicle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Admin_module.Add_Vehicle">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:text="Add Vehicle"
+        android:textColor="@color/violet"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:paddingTop="30dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Vehicle Name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_vname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Vehicle Number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_vnum"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Vehicle Model" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_vmodel"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Vehicle Point" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_vpoint"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:text="Vehicle category" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_back">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_vcate"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:cursorVisible="false"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomButton
+            android:id="@+id/btn_add_vehicle"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Add Vehicle"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

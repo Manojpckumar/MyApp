@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Module.GenerateBillTwo">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black" />
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Bill Details"
+                    android:textColor="@color/violet"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.9dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Fields"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:text="Values"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"/>
+
+            <LinearLayout
+                android:paddingTop="15dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Driver Name"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_drnamez"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Vehicle No"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_vehnoz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Work Location"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_locaz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Vehicle Name"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_vehnamez"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Start Reading"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_startreadz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="End Reading"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_endreadz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Point Time"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_pointz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Bata Charges"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_bataz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Transportation Charge"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_tranchargez"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:layout_weight="1"
+                    android:text="Total Point / Time"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                <com.example.theerthamovers.CustomViews.CustomTextView
+                    android:id="@+id/ctv_tot_pntz"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+            </LinearLayout>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingTop="10dp"
+                android:textColor="@color/violet"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Enter Rate Per Hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/spinner_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_ratez"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:hint="Enter rate per hour"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomButton
+                    android:id="@+id/cbn_calculatez"
+                    android:background="@drawable/button_back"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Calculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/ic_cloud_download_black_24dp"
+                    android:id="@+id/iv_downloadz"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:focusable="true"
+                android:id="@+id/ll_total_cardz"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:layout_weight="1"
+                            android:text="Work Amount"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_wamountz"
+                            android:text="₹ "
+                            android:gravity="right"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:layout_weight="1"
+                            android:text="Transportation Charge"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_trancostz"
+                            android:text="₹ "
+                            android:gravity="right"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:layout_weight="1"
+                            android:text="Bata Amount"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_batachz"
+                            android:text="₹ "
+                            android:gravity="right"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:background="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:paddingTop="10dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:layout_weight="1"
+                            android:text="Total Amount"
+                            android:gravity="center"
+                            android:textSize="25sp"
+                            android:textColor="@color/violet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+                        <com.example.theerthamovers.CustomViews.CustomTextView
+                            android:id="@+id/ctv_totalz"
+                            android:text="₹ "
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="right"
+                            android:textSize="25sp"
+                            android:textColor="@color/violet"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </com.example.theerthamovers.CustomViews.CustomTextView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_genButton"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomButton
+                    android:visibility="gone"
+                    android:id="@+id/cbn_generateBillz"
+                    android:background="@drawable/button_back"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Generate Bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

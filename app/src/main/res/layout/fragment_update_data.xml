@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_module.UpdateDataFrag">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:text="Submit all Expense"
+                android:textColor="@color/violet"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:paddingBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/linearw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Driver Name" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:id="@+id/ced_dnamew"
+                            android:editable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Vehicle Number" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:editable="false"
+                            android:id="@+id/ced_vnumw"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Model Number" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:editable="false"
+                            android:id="@+id/ced_modelnow"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Category" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:id="@+id/ced_catew"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:editable="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Work Location" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_locaw"
+                            android:layout_height="40dp"
+                            android:editable="false"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Start Reading" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:id="@+id/ced_streadw"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:editable="false"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Start Time" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_sttimew"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="End Reading" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_endredw"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="End Time" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_endtimew"
+                            android:editable="false"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Diesel Expense" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_diesalw"
+                            android:layout_height="40dp"
+                            android:text="0"
+                            android:inputType="number"
+                            android:background="@null"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Food Expense" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:id="@+id/ced_foodw"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Grease Expense" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_greasew"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Oil (Normal)" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_noilw"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Oil (Hydraulic)" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_hoilw"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Spare Parts" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_sparew"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Other Expense" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_otherw"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Operator salary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_salaryw"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:text="0"
+                            android:inputType="number"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <com.example.theerthamovers.CustomViews.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Work Date" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/spinner_back">
+
+                        <com.example.theerthamovers.CustomViews.CustomEditText
+                            android:layout_width="match_parent"
+                            android:id="@+id/ced_wodatew"
+                            android:layout_height="40dp"
+                            android:background="@null"
+                            android:editable="false"
+                            android:cursorVisible="false"
+                            android:defaultFocusHighlightEnabled="false"
+                            android:paddingLeft="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomButton
+                    android:visibility="gone"
+                    android:id="@+id/btn_submitallw"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Submit All Datas"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    android:id="@+id/material_buttonw"
+                    layout="@layout/progress_button"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>

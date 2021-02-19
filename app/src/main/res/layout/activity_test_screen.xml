@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    android:id="@+id/ll_datapost"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/whi"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestScreen">
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:id="@+id/ctv_pnf"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Page Not Found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_pnf"
+        android:src="@drawable/fournotfour"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:id="@+id/ctv_reason"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+<!--        <LinearLayout-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <include layout="@layout/admin_all_det_card"/>-->
+<!--            <include layout="@layout/admin_all_det_card"/>-->
+<!--            <include layout="@layout/admin_all_det_card"/>-->
+<!--            <include layout="@layout/admin_all_det_card"/>-->
+<!--            <include layout="@layout/admin_all_det_card"/>-->
+
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+<!--    </ScrollView>-->
+
+</LinearLayout>

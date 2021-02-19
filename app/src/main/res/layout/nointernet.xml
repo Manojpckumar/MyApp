@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:layout_below="@id/space"
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_wifi" />
+
+    <Space
+        android:id="@+id/space1"
+        android:layout_below="@id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:id="@+id/error"
+        android:layout_below="@id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No Connection"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_below="@id/error"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:id="@+id/nocon"
+        android:layout_below="@id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="You must be connected to the internet \n to complete actions"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/nocon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomButton
+            android:id="@+id/ceb_refresh"
+            android:drawableLeft="@drawable/ic_refresh_black_24dp"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Reload"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_updatepassonly"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Module.UpdatePasswordOnly"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_updatepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.example.theerthamovers.CustomViews.CustomTextView
+        android:gravity="center"
+        android:textColor="@color/vio"
+        android:textSize="25sp"
+        android:text="Update Your Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_back">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:passwordToggleEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:id="@+id/ced_userpwd"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_conpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingBottom="5dp"
+            android:text="Confirm Password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_back">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:id="@+id/ced_userpwdconf"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:paddingLeft="10dp" />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.theerthamovers.CustomViews.CustomButton
+            android:id="@+id/cbn_useruppass"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Update Password"
+            android:textColor="@color/white"
+            android:background="@drawable/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

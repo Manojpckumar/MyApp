@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/blu"
+        app:cardCornerRadius="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:id="@+id/ctv_itemname"
+                android:text="Spare Parts"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:id="@+id/ctv_itemsum"
+                android:gravity="right"
+                android:text="₹ 3,500 /-"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

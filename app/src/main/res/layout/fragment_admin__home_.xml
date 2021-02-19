@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_adminhomefrag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Admin_module.Admin_Home_Fragment">
+
+  <RelativeLayout
+      android:layout_marginTop="55dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <RelativeLayout
+          android:orientation="vertical"
+          android:background="@drawable/back_arc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+      <LinearLayout
+          android:padding="20dp"
+          android:id="@+id/linear1"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <com.example.theerthamovers.CustomViews.CustomTextView
+              android:id="@+id/ctv_adminname"
+              android:textColor="@color/white"
+              android:paddingTop="20dp"
+              android:gravity="center"
+              android:textSize="20sp"
+              android:text="Hi..."
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+          <com.example.theerthamovers.CustomViews.CustomTextView
+              android:paddingTop="20dp"
+              android:textColor="@color/white"
+              android:gravity="center"
+              android:textSize="20sp"
+              android:text="Welcome to"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+          <com.example.theerthamovers.CustomViews.CustomTextView
+              android:paddingTop="20dp"
+              android:textColor="@color/white"
+              android:gravity="center"
+              android:textSize="20sp"
+              android:text="Admin Dashboard"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          app:layout_anchor="@id/linear1"
+          app:layout_anchorGravity="center_vertical"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:layout_marginTop="40dp"
+          android:layout_below="@id/linear1"
+          android:id="@+id/linear_button"
+          android:gravity="center"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:gravity="center"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <com.example.theerthamovers.CustomViews.CustomButton
+             android:id="@+id/btn_pending"
+             android:text="Pending"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:textAllCaps="false"
+             android:background="@drawable/tab1_back_plain"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"/>
+
+         <com.example.theerthamovers.CustomViews.CustomButton
+             android:id="@+id/btn_started"
+             android:text="Started"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:textAllCaps="false"
+             android:textColor="@color/black"
+             android:background="@drawable/tab2_plain_back"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"/>
+
+         <com.example.theerthamovers.CustomViews.CustomButton
+             android:id="@+id/btn_completed"
+             android:text="Completed"
+             android:paddingStart="10dp"
+             android:paddingEnd="10dp"
+             android:textAllCaps="false"
+             android:textColor="@color/black"
+             android:background="@drawable/tab3_plain_back"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"/>
+
+
+     </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_below="@id/linear_button"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+             <FrameLayout
+                 android:id="@+id/frame2"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"/>
+
+          </ScrollView>
+
+
+      </LinearLayout>
+
+
+  </RelativeLayout>
+
+</RelativeLayout>

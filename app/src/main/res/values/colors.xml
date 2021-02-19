@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#736EFE</color>
+    <color name="colorPrimaryDark">#98F7EB</color>
+    <color name="colorAccent">#736EFE</color>
+
+    //created colors manoj
+    <color name="coffe">#6f1d29</color>
+    <color name="orenge">#FF6D00</color>
+    <color name="red">#D50000</color>
+    <color name="green">#02A346</color>
+    <color name="black">#000000</color>
+    <color name="lightblack">#3C3A3A</color>
+    <color name="lightash">#888888</color>
+    <color name="ashh">#57FFFFFF</color>
+    <color name="lite">#A6D0FA</color>
+    <color name="pink">#f54e60</color>
+    <color name="rose">#e83f90</color>
+    <color name="literose">#FDE3F3</color>
+    <color name="white">#ffffff</color>
+    <color name="ash">#F7F3F3</color>
+    <color name="skyblue">#5EFCE8</color>
+    <color name="violet">#736EFE</color>
+    <color name="violett">#9A96FA</color>
+    <color name="litegreen">#3fc59d</color>
+    <color name="yellow">#FFD600</color>
+    <color name="liteblue">#DAB7C3F6</color>
+    <color name="whi">#ffffff</color>
+
+    <color name="blu">#677de7</color>
+    <color name="vio">#764ca6</color>
+
+
+
+</resources>

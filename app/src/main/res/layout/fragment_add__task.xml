@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_addtask"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_module.Add_Task">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+       android:padding="10dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+        <com.example.theerthamovers.CustomViews.CustomTextView
+            android:textColor="@color/violet"
+            android:paddingBottom="20dp"
+            android:textStyle="bold"
+            android:text="Add New Task"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Vehicle Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:background="@drawable/spinner_back"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <androidx.appcompat.widget.AppCompatSpinner
+               android:entries="@array/Response"
+               android:id="@+id/spn_vhno"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"/>
+
+       </LinearLayout>
+
+       </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Vehicle Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_vname"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Vehicle Model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_vmodel"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Vehicle Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_vcateo"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Operator Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:entries="@array/Response"
+                    android:id="@+id/spn_opname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Category Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_vtype"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:editable="false"
+                    android:cursorVisible="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Work Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_work_loc"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:cursorVisible="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.theerthamovers.CustomViews.CustomTextView
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:text="Work Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:background="@drawable/spinner_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.example.theerthamovers.CustomViews.CustomEditText
+                    android:id="@+id/ced_wdate"
+                    android:hint="tap to select date"
+                    android:paddingLeft="10dp"
+                    android:background="@null"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:cursorVisible="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+       <Space
+           android:layout_width="match_parent"
+           android:layout_height="20dp"/>
+
+       <LinearLayout
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <com.example.theerthamovers.CustomViews.CustomButton
+               android:id="@+id/cbn_assign_task"
+               android:textSize="18sp"
+               android:text="Add Task"
+               android:textColor="@color/white"
+               android:background="@drawable/button_back"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

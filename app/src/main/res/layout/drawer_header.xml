@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/navback"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:layout_height="200dp">
+
+  <LinearLayout
+      android:paddingTop="15dp"
+      android:paddingBottom="15dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <com.example.theerthamovers.CustomViews.CustomTextView
+          android:id="@+id/ctv_nav_head"
+          android:paddingStart="18sp"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <com.example.theerthamovers.CustomViews.CustomTextView
+          android:paddingStart="18sp"
+          android:textSize="25sp"
+          android:textStyle="bold"
+          android:text="Theertha Earth Movers"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <com.example.theerthamovers.CustomViews.CustomTextView
+          android:paddingStart="20dp"
+          android:visibility="gone"
+          android:textSize="16sp"
+          android:textStyle="bold"
+          android:text="www.theerthaearthmovers.com"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="20dp"/>
+
+      <com.example.theerthamovers.CustomViews.CustomTextView
+          android:text="Version 1.0"
+          android:paddingStart="20dp"
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
